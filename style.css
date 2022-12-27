@@ -1,0 +1,325 @@
+html {scroll-behavior: smooth;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+  }
+
+
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #ffffff00;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #666666;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 100vw;
+    background: #888888;
+    animation: hue-rotate 10s linear infinite;
+  }
+
+  @keyframes hue-rotate {
+    from {
+      filter: hue-rotate(0deg);
+    }
+    to {
+      filter: hue-rotate(360deg);
+    }
+  }
+  
+  
+
+  div,
+  input,
+  label {
+    box-sizing: border-box;
+    transition: .2s background-color;
+  }
+  
+  #switch-to-dark {
+    position: absolute;
+    top: -666.666px;
+    left: -666.666px;
+    height: 0;
+    width: 0;
+  }
+  
+  body > .bg {
+    background-color: hsla(0, 0%, 100%, 1);
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  label[for=switch-to-dark]{
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: hsla(0, 0%, 80%, 1);
+    display: block;
+    position: absolute;
+    left: 2.5%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    border-radius: 20%;
+  }
+  
+  label[for=switch-to-dark] svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+  
+  label[for=switch-to-dark] svg path {
+    fill: hsla(0, 0%, 50%, 1);
+  }
+  
+  #switch-to-dark:checked ~ .bg {
+    background-color: hsla(0, 0%, 10%, 1);
+  }
+  
+  #switch-to-dark:checked ~ div label[for=switch-to-dark]{
+    background-color: hsla(0, 0%, 30%, 1);
+  }
+
+
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav {
+    position: fixed;
+    width: 100vw;
+    box-shadow: 0 0 10px #e1e5ee;
+  }
+  .nav__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 2rem;
+  }
+  .nav__listlogo {
+    list-style: none;
+    margin-right: auto;
+    cursor: pointer;
+  }
+  .nav__listlogo svg {
+    width: 5.0rem;
+    transition: fill 250ms ease-in;
+  }
+  .nav__listitem {
+    list-style: none;
+    font-weight: bold;
+    position: relative;
+    padding: 1.5rem 1rem;
+    cursor: pointer;
+  }
+  .nav__listitem::after {
+    content: "";
+    width: 0;
+    height: 0.3rem;
+    border-radius: 0.2rem;
+    position: absolute;
+    left: 1rem;
+    bottom: 0.8rem;
+    background-color: #66cc75;
+    transition: width 200ms ease-in;
+  }
+  .nav__listitem:hover::after, .nav__listitem:focus::after {
+    width: 80%;
+  }
+  .nav__listitem:hover ul, .nav__listitem:focus ul {
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav__listitemdrop {
+    position: absolute;
+    top: 4rem;
+    left: -1rem;
+    box-shadow: 0 0 10px #e1e5ee;
+    background-color: white;
+    border-radius: 0.2rem;
+    width: 12rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 200ms ease-in-out;
+  }
+  .nav__listitemdrop li {
+    list-style: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    transition: background-color 200ms ease-in-out;
+  }
+  .nav__listitemdrop li:hover, .nav__listitemdrop li:focus {
+    background-color: #fce4ec;
+  }
+
+
+
+  footer
+  {
+      position: relative;
+      width: 100%;
+      background: #3586ff;
+      min-height: 100px;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+  
+  footer .social_icon,
+  footer .menu
+  {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0;
+      flex-wrap: wrap;
+  }
+  
+  footer .social_icon li,
+  footer .menu li
+  {
+      list-style: none;
+  }
+  
+  footer .social_icon li a
+  {
+      font-size: 2em;
+      color: #fff;
+      margin: 0 10px;
+      display: inline-block;
+      transition: 0.5s;
+  }
+  
+  footer .social_icon li a:hover
+  {
+      transform: translateY(-10px);
+  }
+  
+  footer .menu li a
+  {
+      font-size: 1.2em;
+      color: #fff;
+      margin: 0 10px;
+      display: inline-block;
+      transition: 0.5s;
+      text-decoration: none;
+      opacity: 0.75;
+  }
+  
+  footer .menu li a:hover
+  {
+      opacity: 1;
+  }
+  
+  footer p
+  {
+      color: #fff;
+      text-align: center;
+      margin-top: 15px;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+  }
+  
+  footer .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(Images-Waves/Wave-Blau.png);
+    background-size: 1000px 100px;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave_1 4s linear infinite;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_2 4s linear infinite;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  footer .wave#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave_1 3s linear infinite;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_2 3s linear infinite;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  footer .wave#wave5{
+    z-index: 1000;
+    opacity: 0.1;
+    bottom: 10px;
+    animation: animateWave_1 1.5s linear infinite;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  @keyframes animateWave_1{
+    0%
+    {
+      background-position-x: 1000px;
+    }
+    100%
+    {
+      background-position-x: 0px;
+    }
+  }
+  
+  @keyframes animateWave_2{
+    0%
+    {
+      background-position-x: 0px;
+    }
+    100%
+    {
+      background-position-x: 1000px;
+    }
+  }
