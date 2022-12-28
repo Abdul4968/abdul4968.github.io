@@ -1,6 +1,6 @@
-html {scroll-behavior: smooth;}
-* {
-    overflow-x: hidden;
+  html {scroll-behavior: smooth;}
+
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -177,8 +177,7 @@ html {scroll-behavior: smooth;}
 
 
 
-  footer
-  {
+  footer {
       position: relative;
       width: 100%;
       background: #3586ff;
@@ -191,8 +190,7 @@ html {scroll-behavior: smooth;}
   }
   
   footer .social_icon,
-  footer .menu
-  {
+  footer .menu {
       position: relative;
       display: flex;
       justify-content: center;
@@ -202,13 +200,11 @@ html {scroll-behavior: smooth;}
   }
   
   footer .social_icon li,
-  footer .menu li
-  {
+  footer .menu li {
       list-style: none;
   }
   
-  footer .social_icon li a
-  {
+  footer .social_icon li a {
       font-size: 2em;
       color: #fff;
       margin: 0 10px;
@@ -216,13 +212,11 @@ html {scroll-behavior: smooth;}
       transition: 0.5s;
   }
   
-  footer .social_icon li a:hover
-  {
+  footer .social_icon li a:hover {
       transform: translateY(-10px);
   }
   
-  footer .menu li a
-  {
+  footer .menu li a {
       font-size: 1.2em;
       color: #fff;
       margin: 0 10px;
@@ -232,13 +226,11 @@ html {scroll-behavior: smooth;}
       opacity: 0.75;
   }
   
-  footer .menu li a:hover
-  {
+  footer .menu li a:hover {
       opacity: 1;
   }
   
-  footer p
-  {
+  footer p {
       color: #fff;
       text-align: center;
       margin-top: 15px;
