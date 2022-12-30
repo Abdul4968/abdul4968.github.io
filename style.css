@@ -36,24 +36,6 @@
       filter: hue-rotate(360deg);
     }
   }
-  
- 
-  
-  #flag-de {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 2rem;
-    margin: 0 2rem;
-  }
-
-  #flag-en {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 2rem;
-    margin: 0 2rem;
-  }
 
 
 
@@ -191,6 +173,13 @@
   }
   .nav__listitemdrop li:hover, .nav__listitemdrop li:focus {
     background-color: #fce4ec;
+  }
+
+  #nav__listitem_link {
+    color:black;
+    list-style: none;
+    font-weight: bold;
+    text-decoration: none;
   }
 
 
@@ -336,6 +325,32 @@
   }
 
 
+
+  #de-text {
+    text-decoration: none;  
+    color: black;
+  }
+
+  #en-text {
+    text-decoration: none;  
+    color: black;
+  }
+
+  #flag-de {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 2rem;
+  }
+
+  #flag-en {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 2rem;
+  }
 
   .lang-menu {
     width: 100px;
