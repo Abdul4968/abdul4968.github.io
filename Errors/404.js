@@ -1,6 +1,3 @@
----
-permalink: /404.html
----
 var 
 	yetiTL, chatterTL,
     	furLightColor = "#FFF",
