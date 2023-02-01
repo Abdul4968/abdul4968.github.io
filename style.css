@@ -336,22 +336,6 @@
     color: black;
   }
 
-  #flag-de {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 2rem;
-    margin: 0 2rem;
-  }
-
-  #flag-en {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 2rem;
-    margin: 0 2rem;
-  }
-
   .lang-menu {
     width: 100px;
     text-align: right;
@@ -370,7 +354,6 @@
     display: inline-block;
     width: 32px;
     height: 32px;
-    background-image: url(Images-Flags/de.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
