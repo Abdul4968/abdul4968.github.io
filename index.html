@@ -2030,16 +2030,32 @@
                 <h1 id="text02" class="style1" style="opacity: 1; transform: none;"><mark><span style="color: #66CC75">Abdul4968</span></mark></h1>
                 <p id="text03" class="style3" style="opacity: 1;"><span class="p"><strong>I'm a hobby Programmer and hobby Artist</strong><br> <strong>I live in Germany and I am Turkish!</strong></span></p>
                 <ul id="buttons01" class="style1 buttons">
-                  <li style="opacity: 1; transform: none;"><a href="https://discord.com/channels/@me" class="button n01"><svg>
+                  <li style="opacity: 1; transform: none;"><a class="button n01"><svg>
                         <use xlink:href="#icon-67ad41ecc66a1b1cd00d0d3b20c00017"></use>
-                      </svg><span class="label">Add me on Discord!</span></a></li>
+                        </svg><span class="label" onclick="magic()">Add me on Discord!</span></a></li>
+
+                        <script>
+                          function magic() {
+                            const textToCopy = "Abdul4968#2920";
+                            navigator.clipboard.writeText(textToCopy)
+                              .then(() => {
+                                console.log('Text kopiert: ' + textToCopy);
+                                const urlToOpen = "https://discord.com/channels/@me";
+                                window.open(urlToOpen);
+                              })
+                              .catch((error) => {
+                                console.error(error);
+                              });
+                          }
+                          </script>
+
                 </ul>
               </div>
             </div>
           </div>
         </div>
         <ul id="icons01" class="style1 icons">
-          <li style="opacity: 1; transform: none;"><a class="n01" href="https://coming.soon/" aria-label="Discord"><svg>
+          <li style="opacity: 1; transform: none;"><a class="n01" href="https://discord.server.in.work/" aria-label="Discord"><svg>
                 <use xlink:href="#icon-3b7eeeccbb457780f277fce4669f67a0"></use>
               </svg><span class="label">Discord</span></a></li>
           <li style="opacity: 1; transform: none;"><a class="n02" href="https://github.com/Abdul4968" aria-label="GitHub"><svg>
@@ -3115,6 +3131,7 @@
       return str.substr(0, index) + value + str.substr(index)
     }
   </script>
+  
 </body>
 
 </html>
